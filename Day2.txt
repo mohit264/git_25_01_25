@@ -1,0 +1,77 @@
+clear
+mkdir git_25_01_25
+cd git_25_01_25/
+clear
+echo "Hello, World!" | git hash-object --stdin
+echo "Hello, World!" | git hash-object --stdin -w
+git init
+echo "Hello, World!" | git hash-object --stdin -w
+clear
+echo "Hello, World!" | shasum
+cls
+clear
+echo "Hello, World!" | git hash-object --stdin -w
+echo "Hello, World!" | shasum
+git cat-file -p 8ab686eafeb1f44702738c8b0f24f2567c36da6d
+git cat-file -t 8ab686eafeb1f44702738c8b0f24f2567c36da6d
+git cat-file -s 8ab686eafeb1f44702738c8b0f24f2567c36da6d
+echo "blob 14\0Hello, World!" | shasum
+echo -e "blob 14\0Hello, World!" | shasum
+echo -e "blob 13\0Hello, World!" | shasum
+clear
+echo -n "Hello, World!" | git hash-object --stdin -w
+git cat-file -s b45ef
+echo -n -e "blob 13\0Hello, World!" | shasum
+echo "Hello, World!" | git hash-object --stdin -w
+echo "Hello, World!" | git hash-object --stdin -w
+echo "Hello, World!" | git hash-object --stdin -w
+clear
+echo "Hello, World!" > greeting.txt
+ls -a
+cat greeting.txt 
+git status
+clear
+git status
+git add greeting.txt 
+git status
+git ls-files
+clear
+echo "Hello, World2!" > greeting2.txt
+git status
+git ls-files
+rm greeting2.txt 
+clear
+git ls-files
+ls
+git ls-files
+git status
+git rm greeting.txt 
+git status
+clear
+echo "Hello, World!" > greeting.txt
+git add .
+git status
+git commit -m "This is my first commit"
+git status
+git restore greeting.txt
+git status
+git commit -m "Bypassing Standard Operating Model"
+git log
+clear
+git status
+git add .
+git statuss
+git status
+git commit -m "Added 14 new files"
+clear
+git log 
+clear
+git log -2
+clear
+git log --oneline -2
+git cat-file -t de3cc9b
+git cat-file -p de3cc9b
+git cat-file -p 89ff18a
+git cat-file -p 65204b894
+git cat-file -p 5430d8
+clear
