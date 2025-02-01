@@ -1,0 +1,66 @@
+clear
+git status
+git add Day2.txt Git_Areas.png 
+git status
+git commit -m "Added Day2 commands and Git Areas Visual"
+clear
+git cat-file -p a2cad5c
+git cat-file -p b8f97b6
+git status
+git add Git_Application.exe 
+git commit -m "Added Git Demo program"
+clear
+git log -1
+echo "Let's understand how to Create tree object in Git" | git hash-object -w --stdin
+git cat-file -p bebe3e
+git cat-file -p 2774b > git_tree.txt
+clear
+cat git_tree.txt 
+clear
+vim git_tree.txt 
+vim git_tree.txt 
+cat git_tree.txt 
+clear
+cat git_tree.txt | git mktree
+git cat-file -t 1b160
+git cat-file -p 2774b 
+git cat-file -p 1b160
+git log -1
+git cat-file -p bebe3
+clear
+git status
+git cat-file -p 1b160
+clear
+git read-tree 1b16046d7cb56bb1190e81af7fe1ff0614c3774a
+git status
+clear
+git ls-files
+clear
+git status
+echo "Let's understand how to Create tree object in Git" > mohini.txt
+git status
+clear
+git commit -m "Added new file as mohini.txt"
+git cat-file -p 03a603b
+git cat-file -p 1b16046d7cb56bb1190e81af7fe1ff0614c3774a
+clear
+git log -1
+clear
+git log
+clear
+git tag -a day3 -m "On Day3 we have completed Git object model"
+git cat-file -t day3
+git cat-file -p day3
+git log -1
+git cat-file -p 03a60
+clear
+git cat-file -p 1b16046
+clear
+git log -2
+git cat-file -p bebe
+git cat-file -p 2774
+git cat-file -p 03a603
+clear
+git log --oneline -15
+git cat-file -p 65204b8
+clear
