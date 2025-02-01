@@ -1,0 +1,1 @@
+Understanding how branch always points to a latest commit : Branching
