@@ -1,0 +1,63 @@
+  cd git_25_01_25/
+  git status
+  git add Visuals/git_reset_with_flags.png 
+  git add Visuals/head_branch_tags_trees.png 
+  git add Visuals/Head_Branches_Trees.png 
+  git commit -m "Added Visuals for branching and Head"
+  clear
+  git branch feature/jr-01-ua
+  git branch
+  git switch feature/jr-01-ua 
+  cat .git/refs/heads/master
+  cat .git/refs/heads/feature/jr-01-ua 
+  clear
+  git branch feature/jr-01-ua-be
+  git branch feature/jr-02-ua-fe
+  git branch feature/jr-03-ua-qa
+  git branch
+  git switch feature/jr-02-ua-fe 
+  echo "<html> ICICI Login! </html>" > login.html
+  clear
+  git add . 
+  git commit -m "Added Login Page"
+  cat .git/refs/heads/feature/jr-01-ua-be 
+  cat .git/refs/heads/feature/jr-02-ua-fe 
+  clear
+  git switch master
+  git log -5 --oneline
+  git switch 2d0747a
+  git checkout 2d0747a
+  clear
+  echo "Create an App in FB" > readme.md
+  echo "// Implementing API to communicate with FB" > service.js
+  echo "<html> </html>" > fe.html
+  git add .
+  git commit -m "Added Spike POC for Federated Auth"
+  echo "Testing Screenshot Added" > screenshots.txt
+  git add .
+  git commit -m "Added screenshot"
+  echo "Updated final end to end documentation fr future reference" >  final_readme.md
+  git add .
+  git commit -m "Done end to end POC"
+  clear
+  git log -3 --oneline
+  git log -4 --oneline
+  git switch feature/jr-01-ua-be 
+  clear
+  echo "Added unit test cases for Login service" > unit_test.js
+  git add .
+  git commit -m "Unit Test cases for Service"
+  git reflog
+  clear
+  git checkout e32e2d0
+  cat .git/HEAD
+  git branch poc/fedarated
+  git switch poc/fedarated 
+  clear
+  git switch master
+  git status
+  git status
+  git add ,
+  git add .
+  git commit -m "Agile ways of working and detached head"
+  history > Day6.txt
